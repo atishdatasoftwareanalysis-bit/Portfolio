@@ -1,0 +1,1504 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.contaner {
+    border: 1px solid black;
+    text-align: center;
+    margin-top: auto;
+}
+
+.contaner h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px 10px;
+}
+
+.Navbar {
+    background-color: black;
+    border: 5px;
+
+}
+
+.Navbar ul {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+
+
+}
+
+.Navbar li:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(116, 116, 117);
+    /* text-transform: uppercase; */
+    transform: scale(1.1);
+
+}
+
+
+.Navbar li {
+
+    /* float: left; */
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    list-style: none;
+    margin: 5px 1px;
+    padding: 10px 20px 10px;
+    background-color: black;
+    border: 1px solid rgb(3, 3, 3);
+    border-right: 1px solid wheat;
+    border-left: 1px solid wheat;
+}
+
+.Navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* for selection code  */
+/* Hero Section */
+.first {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 2%;
+}
+
+.box-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* SEO & Digital Marketing */
+.digital_marketing {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.digital_marketing p {
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 16px
+}
+
+.work-sections h2{
+font-size: 20px;
+padding: 10px;
+margin: 5px;
+text-align: center;
+font-style: italic;
+
+}
+/* Why Hire me */
+
+.why-hire {
+    width: 100%;
+    padding: 70px 6%;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.why-hire-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.why-hire-header h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.why-hire-header p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.why-hire-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.hire-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 1px solid #e5e5e5;
+}
+
+.hire-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+.hire-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hire-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.hire-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+    min-height: 95px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.skills span {
+    background: #f0f0f0;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .why-hire-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .why-hire {
+        padding: 50px 5%;
+    }
+
+    .why-hire-header h2 {
+        font-size: 30px;
+    }
+
+    .why-hire-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hire-card p {
+        min-height: auto;
+    }
+}
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.projects-section {
+    width: 100%;
+    padding: 80px 8%;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+
+/* Heading */
+
+.projects-heading h2 {
+    font-size: 42px;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.projects-heading>p:last-child {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+/* =========================
+   CARD CONTAINER
+========================= */
+
+.project-container {
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #575656;
+
+    transition: transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   PROJECT IMAGE AREA
+========================= */
+
+.project-image {
+    height: 250px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Image category */
+
+.project-image span {
+    background: rgba(133, 132, 132, 0.15);
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    color: rgb(17, 17, 17);
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.project-content {
+    padding: 30px;
+}
+
+.project-category {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    margin: 0 0 10px;
+
+    color: #777;
+}
+
+.project-content h3 {
+    font-size: 28px;
+
+    margin: 0 0 12px;
+
+    font-weight: 700;
+}
+
+.project-description {
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.project-skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.project-skills span {
+    font-size: 12px;
+
+    padding: 7px 11px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 20px;
+
+    color: #555;
+
+    background: #fafafa;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.project-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #111;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    transition: gap 0.3s ease;
+}
+
+.project-btn span {
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.project-btn:hover {
+    gap: 15px;
+}
+
+.project-btn:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-heading h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .projects-section {
+        padding: 60px 5%;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 24px;
+    }
+
+    .project-content h3 {
+        font-size: 24px;
+    }
+
+}
+
+/* Left Side */
+.firsthalf {
+    width: 100%;
+}
+
+.hero-heading h1 {
+    font-size: 55px;
+    margin: 0;
+    color: #111;
+}
+
+.hero-heading p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.small-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 30px;
+}
+
+/* Right Side */
+.secondhalf {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondhalf img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    justify-content: end;
+    border-radius: 50%;
+}
+
+.first-section {
+    padding: 1%;
+    justify-content: center;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+/* Why should you hire me. */
+
+.work-sections {
+    padding: 1%;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(216, 216, 216);
+}
+
+.work-sections p {
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 16px
+}
+
+/* for videos */
+.video-portfolio {
+    padding: 80px 8%;
+    background: #111;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-portfolio h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.video-slider {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.video-track {
+    display: flex;
+    gap: 25px;
+    transition: transform 0.5s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-card {
+    min-width: 350px;
+    background: #1c1c1c;
+    border-radius: 15px;
+    padding: 12px;
+    box-sizing: border-box;
+    /* text-align: left;
+    overflow: hidden; */
+}
+
+.video-card video {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.video-card h3 {
+    margin: 15px 5px 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.video-card p {
+    margin: 0 5px 10px;
+    color: #aaa;
+    text-align: center;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+    color: black;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    z-index: 100;
+}
+
+.prev {
+    left: -60px;
+}
+
+.next {
+    right: -60px;
+}
+
+.slider-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* for logo images */
+/* ================================
+   SOFTWARE SECTION
+================================ */
+
+.softwares {
+
+    width: 100%;
+
+    padding: 60px 0;
+
+    overflow: hidden;
+
+}
+
+
+/* HEADING */
+
+.softwares h2 {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* ================================
+   CAROUSEL
+================================ */
+
+.software-carousel {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+
+/* ================================
+   MOVING TRACK
+================================ */
+
+.software-track {
+
+    display: flex;
+
+    width: max-content;
+
+    gap: 40px;
+
+    animation: softwareMove 20s linear infinite;
+
+}
+
+
+/* ================================
+   LOGO CARD
+================================ */
+
+.software-card {
+
+    width: 150px;
+
+    height: 120px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+}
+
+
+
+/* LOGO */
+
+.software-card img {
+
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: contain;
+
+}
+
+/* ================================
+   INFINITE ANIMATION
+================================ */
+
+@keyframes softwareMove {
+
+    from {
+
+        transform: translateX(0);
+
+    }
+
+    to {
+
+        transform: translateX(calc(-50% - 20px));
+
+    }
+
+}
+
+
+/* ================================
+   HOVER = PAUSE
+================================ */
+
+.software-card {
+    transition: transform 0.3s ease;
+}
+
+.software-card:hover {
+    transform: scale(1.15);
+    z-index: 5;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .software-track {
+
+        gap: 20px;
+
+        animation-duration: 15s;
+
+    }
+
+
+    .software-card {
+
+        width: 120px;
+
+        height: 100px;
+
+    }
+
+
+    .software-card img {
+
+        width: 70px;
+
+        height: 70px;
+
+    }
+}
+
+/* Grace Engineering  */
+.Grace-hero h1 {
+    text-align: top;
+    padding: 15px;
+    border: 2px solid rgb(114, 114, 114);
+    display: flex;
+    box-sizing: content-box;
+    width: 100%;
+    
+
+}
+
+.Grace-hero img {
+    width: 450px;
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    border-right: 2px solid red;
+}
+
+.Grace-hero p {
+    text-align: left;
+    font-size: 18px;
+    margin: 5px;
+    padding: 15px;
+}
+
+.Grace-content {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    justify-content: center;
+    background: white;
+    border-bottom: 2px solid red;
+}
+
+.SEO-audit {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 70px 7%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* LEFT TEXT */
+.seo-text {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.seo-text h2 {
+    font-size: 32px;
+    margin: 0 0 10px;
+}
+
+.seo-text h3 {
+    font-size: 24px;
+    margin: 0 0 28px;
+}
+
+.seo-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+.seo-text strong {
+    font-weight: 700;
+}
+
+
+/* RIGHT IMAGE */
+.Grace-seo-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Grace-seo-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .SEO-audit {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+        gap: 40px;
+    }
+
+    .seo-text h2 {
+        font-size: 27px;
+    }
+
+    .seo-text h3 {
+        font-size: 21px;
+    }
+
+    .seo-text p {
+        font-size: 15px;
+    }
+
+    .Grace-seo-img {
+        order: 2;
+    }
+}
+
+.btn:hover {
+    color: #6d6b6b;
+    background-color: #ffffff;
+}
+
+.btn {
+    width: 110px;
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Juice up house */
+
+.Roadmap-title{
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+    align-items: center;
+}
+
+.Roadmaps {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    padding: 50px 5%;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom: 10px solid #06ca68;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.roadmap-left {
+    width: 30%;
+    padding: 20px 40px 20px 0;
+    box-sizing: border-box;
+}
+
+.roadmap-logo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.roadmap-left h3 {
+    font-size: 24px;
+    margin: 0 0 15px;
+    color: #222;
+}
+
+.roadmap-left p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+
+/* =========================
+   VERTICAL LINE
+========================= */
+
+.roadmap-line {
+    width: 2px;
+    background: #06ca68;
+    margin: 20px 40px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.roadmap-right {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.roadmap-right h2 {
+    font-size: 32px;
+    margin: 0 0 12px;
+    color: #222;
+}
+
+.roadmap-intro {
+    max-width: 750px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   ROADMAP STEPS
+========================= */
+
+.roadmap-step {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+    align-items: flex-start;
+}
+
+.roadmap-step > span {
+    min-width: 42px;
+    height: 42px;
+    border: 2px solid #06ca68;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #06ca68;
+}
+
+.roadmap-step h4 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    color: #222;
+}
+
+.roadmap-step p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .Roadmaps {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .roadmap-left {
+        width: 100%;
+        padding: 0 0 30px;
+    }
+
+    .roadmap-line {
+        width: 100%;
+        height: 2px;
+        margin: 10px 0 30px;
+    }
+
+    .roadmap-right {
+        width: 100%;
+    }
+
+    .roadmap-logo img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .roadmap-right h2 {
+        font-size: 26px;
+    }
+}
+
+.Roadmap-title{
+     padding: 1%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    background-color: rgb(216, 216, 216);
+}
+
+.Roadmap-title p{
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px
+}
+
+/* Cityspirit */
+
+.Roadmaps2 {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    padding: 50px 5%;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom: 10px solid #08d3da;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.roadmap-left {
+    width: 30%;
+    padding: 20px 40px 20px 0;
+    box-sizing: border-box;
+}
+
+.roadmap-logo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.roadmap-left h3 {
+    font-size: 24px;
+    margin: 0 0 15px;
+    color: #222;
+}
+
+.roadmap-left p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+
+/* =========================
+   VERTICAL LINE
+========================= */
+
+.roadmap-line2 {
+    width: 3px;
+    background: #08d3da;
+    margin: 20px 40px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.roadmap-right {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.roadmap-right h2 {
+    font-size: 32px;
+    margin: 0 0 12px;
+    color: #222;
+}
+
+.roadmap-intro {
+    max-width: 750px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   ROADMAP STEPS
+========================= */
+
+.roadmap-step2 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+    align-items: flex-start;
+}
+
+.roadmap-step2 > span {
+    min-width: 42px;
+    height: 42px;
+    border: 2px solid #08d3da;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #08d3da;
+}
+
+.roadmap-step2 h4 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    color: #222;
+}
+
+.roadmap-step2 p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .Roadmaps {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .roadmap-left {
+        width: 100%;
+        padding: 0 0 30px;
+    }
+
+    .roadmap-line {
+        width: 100%;
+        height: 2px;
+        margin: 10px 0 30px;
+    }
+
+    .roadmap-right {
+        width: 100%;
+    }
+
+    .roadmap-logo img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .roadmap-right h2 {
+        font-size: 26px;
+    }
+}
+
+.Roadmap-title{
+     padding: 1%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    background-color: rgb(216, 216, 216);
+}
+
+.Roadmap-title p{
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px
+}
+
+/* Certificate and experinece */
+
+
+/* ===== SECTION ===== */
+.credentials-section {
+    width: 100%;
+    padding: 70px 5%;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.credentials-header {
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.section-tag {
+    color: #3f3c3c;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.credentials-header h2 {
+    font-size: clamp(27px, 3vw, 38px);
+    margin: 12px 0;
+}
+
+.credentials-header p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===== GRID ===== */
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+/* ===== CARD ===== */
+.credential-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 27px;
+    min-width: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Red top accent */
+.credential-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 3px;
+    background: linear-gradient(to right, #c80013, #ff777e, transparent);
+}
+
+.credential-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+/* ===== TOP LABELS ===== */
+.credential-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.credential-number {
+    color: #e71925;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.verified-badge {
+    background: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 7px 9px;
+    white-space: nowrap;
+}
+
+.verified-badge::first-letter {
+    color: #19a64a;
+}
+
+/* ===== ICON ===== */
+.credential-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff4f4;
+    border: 1px solid #ffd1d3;
+    color: #e71925;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+/* Short line beside icon */
+.credential-icon::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: #ff6b72;
+    margin-left: 110px;
+}
+
+/* ===== CONTENT ===== */
+.credential-category {
+    color: #999;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.credential-card h3 {
+    font-size: 21px;
+    line-height: 1.35;
+    margin: 0 0 10px;
+    overflow-wrap: anywhere;
+}
+
+.credential-description {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0 0 25px;
+}
+
+/* ===== FOOTER ===== */
+.credential-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 17px;
+    margin-top: auto;
+}
+
+.file-label {
+    color: #999;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.credential-button {
+    display: inline-block;
+    background: #171717;
+    color: #fff;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+.credential-button:hover {
+    background: #e71925;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1000px) {
+    .credentials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    .credentials-section {
+        padding: 45px 18px;
+    }
+
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .credential-card {
+        padding: 24px;
+        min-height: 370px;
+    }
+
+    .credentials-header h2 {
+        font-size: 28px;
+    }
+}
